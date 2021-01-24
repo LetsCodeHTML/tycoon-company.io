@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Company</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <h1>Tycoon Company</h1>
+  <p>Become a tycoon legend!</p>
+  <p class="info">Money: £<span id="money"></span></p>
+  <p class="info">Profits: £<span id="pps"></span>/s</p>
+  <div class="purchases">
+    <div onclick="worker()" class="purchase">
+     <h2>Worker</h2>
+     <p class="p">Profit: £10</p>
+     <p class="cost">Cost: £<span id="workercost"></span></p>
+    </div>
+    <div onclick="smallFactory()" class="purchase">
+     <h4>Small factory</h4>
+     <p class="p">Profit: £100</p>
+     <p class="cost">Cost: £<span id="smallfactorycost"></span></p>
+    </div>
+    <div onclick="factory()" class="purchase">
+      <h2>Factory</h2>
+      <p class="p">Profit: £1000</p>
+      <p class="cost">Cost: £<span id="factorycost"></span></p>
+    </div>
+    <div onclick="megaFactory()" class="purchase">
+     <h3>Mega factory</h3>
+     <p class="p">Profit: £10000</p>
+     <p class="cost">Cost: £<span id="megafactorycost"></span></p>
+    </div> 
+  </div>
+  <div onclick="superFactory()" class="purchase">
+    <h4>Super factory</h4>
+    <p class="p">Profit: £100000</p>
+    <p class="cost">Cost: £<span id="superfactorycost"></span></p>
+   </div> 
+ </div>
+  <p class="save" onclick="save()">Save progress</p>
+  <p class="load" onclick="load()">Load progress</p>
+  <script src="script.js"></script>
+ </body>
+</html>

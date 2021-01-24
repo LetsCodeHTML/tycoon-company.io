@@ -1,0 +1,81 @@
+body {
+ font-family: Arial;
+ background-color: gold;
+ color: #00cc00;
+ text-align: center;
+ font-size: 125%;
+ max-width: 805px;
+ margin: auto;
+}
+
+p.info {
+ border: 2px solid #00cc00;
+ border-radius: 25px;
+ margin-right: 5px;
+ margin-left: 5px;
+}
+
+.purchases {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.purchase {
+ background-color: #00cc00;
+ color: gold;
+ padding: 3px;
+ height: 150px;
+ width: 150px;
+ border-radius: 20%;
+ position: relative;
+ overflow: hidden;
+ margin: 10px;
+ cursor: pointer;
+}
+
+.purchase .p{
+ position: absolute;
+ bottom: 30px;
+ text-align: center;
+ width: 100%;
+}
+
+.cost {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 25px;
+ background-color: blue;
+ color: white;
+ margin: 0;
+ padding: 2px;
+}
+
+.save {
+ background-color: #00cc00;
+ color: white;
+ text-align: center;
+ width: 100%;
+ margin: 0;
+ position: fixed;
+ bottom: 26px;
+ left: 0;
+}
+
+.load {
+ background-color: #0000cc;
+ color: white;
+ text-align: center;
+ width: 100%;
+ margin: 0;
+ position: fixed;
+ bottom: 0;
+ left: 0;
+}
+
+.save, .load {
+ height: 26px;
+ cursor: pointer;
+}
